@@ -7,13 +7,13 @@
   </head>
   <body>
     <div class="header">
-      <h2>YOU VOTE. WE'LL SELL THE WINNERS!</h3>
-      <h1>Drawing and Sketching Art Challenge</h1>
+      <h3>YOU VOTE. WE'LL SELL THE WINNERS!</h3>
+      <h2>Drawing and Sketching Art Challenge</h2>
     </div>
     <div ng-app="app" ng-controller="AppController" ng-cloak>
       <div ng-model="submission">
         <img ng-src="{{submission.design_thumbnail}}" class="design-thumbnail">
-        <div class="design-name">{{submission.design_name}}</div>
+        <h3 class="design-name">{{submission.design_name}}</h3>
         <form>
           <input type="submit" value="1">
           <input type="submit" value="2">
@@ -21,7 +21,7 @@
           <input type="submit" value="4">
           <input type="submit" value="5">
         <form>
-        <div>
+        <div class="artist-info">
           <img ng-src="{{submission.artist_thumbnail}}">
           <div>{{submission.artist_name}}</div>
           <div>{{submission.artist_location}}</div>
