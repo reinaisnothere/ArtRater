@@ -12,3 +12,22 @@
   max-height: 800px;
   max-width: 500px;
 }
+
+.design-name {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: white;
+  border: solid grey 2px;
+  margin: 10px;
+}
