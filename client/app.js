@@ -6,6 +6,7 @@ appModule.controller('AppController', function($http, $scope) {
   var count;
   $scope.more = true;
   $scope.end = false;
+  $scope.error = false;
 
   $http({
     method: 'GET',
@@ -22,8 +23,6 @@ appModule.controller('AppController', function($http, $scope) {
       order[rand] = order[j];
       order[j] = temp;
     }
-  })
-  .then(function() {
     return $http({
       method: 'GET',
       url: '/submissions/' + order[0]
@@ -31,6 +30,10 @@ appModule.controller('AppController', function($http, $scope) {
   })
   .then(function(results) {
     $scope.submission = results.data;
+  })
+  .catch(function(err) {
+    $scope.more = false;
+    $scope.error = true;
   });
 
   $scope.next = function(rating) {
@@ -52,6 +55,10 @@ appModule.controller('AppController', function($http, $scope) {
       }
       $scope.more = false;
       $scope.end = true;
+    })
+    .catch(function(err) {
+      $scope.more = false;
+      $scope.error = true;
     });
   };
 });
