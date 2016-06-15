@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+body {
+  font-family: 'Architects Daughter', sans-serif;
+}
+
 .header {
   text-align: center;
 }
