@@ -11,7 +11,7 @@
       <h2>Drawing and Sketching Art Challenge</h2>
     </div>
     <div ng-app="app" ng-controller="AppController" ng-cloak>
-      <div ng-model="submission">
+      <div ng-model="submission" ng-show="more">
         <img ng-src="{{submission.design_thumbnail}}" class="design-thumbnail">
         <h3 class="design-name">{{submission.design_name}}</h3>
         <form>
@@ -29,6 +29,7 @@
           </div>
         </div>
       </div>
+      <div ng-show="end">End of submissions. Check back later for more!</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="/app.js" type="text/javascript"></script>

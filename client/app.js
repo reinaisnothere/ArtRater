@@ -3,12 +3,15 @@ var appModule = angular.module('app', []);
 appModule.controller('AppController', function($http, $scope) {
   var order = [];
   var position = 0;
+  var count;
+  $scope.more = true;
+  $scope.end = false;
   $http({
     method: 'GET',
     url: '/submissions?count=true',
   })
   .then(function(results) {
-    var count = results.data;
+    count = results.data;
     for (var i = 0; i < count; i++) {
       order.push(i);
     }
@@ -27,7 +30,7 @@ appModule.controller('AppController', function($http, $scope) {
   })
   .then(function(results) {
     $scope.submission = results.data;
-  })
+  });
 
   $scope.next = function(rating) {
     $http({
@@ -37,15 +40,19 @@ appModule.controller('AppController', function($http, $scope) {
     })
     .then(function() {
       position++;
-      return $http({
-        method: 'GET',
-        url: '/submissions/' + order[position]
-      })
-    })
-    .then(function(results) {
-      $scope.submission = results.data;
-    })
-  }
+      if (position < count) {
+        return $http({
+          method: 'GET',
+          url: '/submissions/' + order[position]
+        })
+        .then(function(results) {
+          $scope.submission = results.data;
+        })
+      }
+      $scope.more = false;
+      $scope.end = true;
+    });
+  };
   
   // $scope.places = [];
   // $scope.loading = false;
