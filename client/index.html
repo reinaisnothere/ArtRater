@@ -22,9 +22,11 @@
           <input type="submit" value="5">
         <form>
         <div class="artist-info">
-          <img ng-src="{{submission.artist_thumbnail}}">
-          <div>{{submission.artist_name}}</div>
-          <div>{{submission.artist_location}}</div>
+          <img ng-src="{{submission.artist_thumbnail}}" class="artist-thumbnail">
+          <div class="artist-info-text-container">
+            <div>by {{submission.artist_name}}</div>
+            <div>{{submission.artist_location}}</div>
+          </div>
         </div>
       </div>
     </div>
