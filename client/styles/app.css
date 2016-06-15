@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Architects Daughter', sans-serif;
+  text-align: center;
 }
 
 .header {
@@ -23,6 +24,9 @@ body {
 
 form {
   text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  border-bottom: solid grey 1px;
 }
 
 input {
@@ -37,12 +41,12 @@ input {
 }
 
 .artist-info {
-  width: 300px;
-  height: 50px;
-  margin: 0 auto;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .artist-thumbnail {
+  margin: 0;
   object-fit: cover;
   width: 50px;
   height: 50px;
@@ -53,5 +57,5 @@ input {
 .artist-info-text-container {
   display: inline-block;
   text-align: left;
-  margin-top: 5px;
+  margin: 5px 0 0 10px;
 }
