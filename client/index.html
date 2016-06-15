@@ -2,10 +2,13 @@
 <html>
   <head>
     <title>Art Rater</title>
+    <link rel="stylesheet" href="/styles/app.css">
   </head>
   <body>
-    <h3>YOU VOTE. WE'LL SELL THE WINNERS!</h3>
-    <h1>Drawing and Sketching Art Challenge</h1>
+    <div class="header">
+      <h3>YOU VOTE. WE'LL SELL THE WINNERS!</h3>
+      <h1>Drawing and Sketching Art Challenge</h1>
+    </div>
     <div ng-app="app" ng-controller="AppController">
       <div ng-model="submission">{{submission}}</div>
     </div>
