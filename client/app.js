@@ -29,6 +29,23 @@ appModule.controller('AppController', function($http, $scope) {
     $scope.submission = results.data;
   })
 
+  $scope.next = function(rating) {
+    $http({
+      method: 'PUT',
+      data: { rating: rating },
+      url: '/submissions/' + order[position]
+    })
+    .then(function() {
+      position++;
+      return $http({
+        method: 'GET',
+        url: '/submissions/' + order[position]
+      })
+    })
+    .then(function(results) {
+      $scope.submission = results.data;
+    })
+  }
   
   // $scope.places = [];
   // $scope.loading = false;
