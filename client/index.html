@@ -10,7 +10,22 @@
       <h1>Drawing and Sketching Art Challenge</h1>
     </div>
     <div ng-app="app" ng-controller="AppController" ng-cloak>
-      <div ng-model="submission">{{submission}}</div>
+      <div ng-model="submission">
+        <img ng-src="{{submission.design_thumbnail}}">
+        <div>{{submission.design_name}}</div>
+        <form>
+          <input type="submit" value="1">
+          <input type="submit" value="2">
+          <input type="submit" value="3">
+          <input type="submit" value="4">
+          <input type="submit" value="5">
+        <form>
+        <div>
+          <img ng-src="{{submission.artist_thumbnail}}">
+          <div>{{submission.artist_name}}</div>
+          <div>{{submission.artist_location}}</div>
+        </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="/app.js" type="text/javascript"></script>
