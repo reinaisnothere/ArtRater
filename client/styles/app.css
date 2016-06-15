@@ -7,6 +7,14 @@ body {
   text-align: center;
 }
 
+input {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: 0;
+}
+
 .header {
   text-align: center;
 }
@@ -38,6 +46,13 @@ input {
   background-color: white;
   border: solid grey 2px;
   margin: 10px;
+  color: grey;
+  font-size: 18px;
+}
+
+input:hover {
+  color: white;
+  background-color: grey;
 }
 
 .artist-info {
