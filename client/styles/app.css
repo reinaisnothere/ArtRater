@@ -6,7 +6,7 @@ body {
   font-family: 'Architects Daughter', sans-serif;
   text-align: center;
   margin-bottom: 0;
-  color: #3D3D3D;
+  color: #454545;
 }
 
 .small-header {
@@ -40,7 +40,7 @@ body {
 .design-name {
   text-align: center;
   margin: 0 auto;
-  color: grey;
+  color: #8F8F8F;
 }
 
 form {
