@@ -16,13 +16,13 @@ input:focus {
 }
 
 .design-thumbnail-container {
-  height: 450px;
+  height: 400px;
 }
 
 .design-thumbnail {
   display: block;
   margin: 0 auto;
-  max-height: 450px;
+  max-height: 400px;
   max-width: 400px;
 }
 
@@ -35,7 +35,8 @@ form {
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
-  border-bottom: solid grey 1px;
+  /*padding-bottom: 30px;*/
+  
 }
 
 input {
@@ -54,6 +55,22 @@ input {
 input:hover {
   color: white;
   background-color: grey;
+}
+
+.rating-description {
+  width: 350px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  border-bottom: solid grey 1px;
+  color: grey;
+}
+
+.like {
+  float: left;
+}
+
+.dislike {
+  float: right;
 }
 
 .artist-info {
