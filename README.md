@@ -4,6 +4,8 @@ An app that rates art submissions.
 **Screenshot**  
 <img src="http://i.imgur.com/qYaxqAj.png" width="800px"/>  
 
+
+##Table of Contents
 1. [Requirements](#requirements)
 2. [Usage](#usage)
   1. [Installing dependencies](#installing-dependencies)
