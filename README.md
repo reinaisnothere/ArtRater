@@ -12,6 +12,7 @@ Node
 ##Usage
 
 ###Installing dependencies
+From the root directory of the app:
 ```npm install```
 
 ###Starting the server locally
