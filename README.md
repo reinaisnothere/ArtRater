@@ -1,5 +1,5 @@
-# artRater
-An app that rates art submissions.
+# ArtRater
+An app that allows users to rate art & design submissions.
 
 **Screenshot**  
 <img src="http://i.imgur.com/qYaxqAj.png" width="800px"/>  
