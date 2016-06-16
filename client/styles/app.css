@@ -5,14 +5,19 @@
 body {
   font-family: 'Architects Daughter', sans-serif;
   text-align: center;
+  margin-bottom: 0;
+  color: #3D3D3D;
 }
 
-input {
-  cursor: pointer;
+.small-header {
+  color: grey;
+  font-size: 18px;
+  margin-bottom: 0;
 }
 
-input:focus {
-  outline: 0;
+.main-header {
+  font-size: 22px;
+  margin-top: 0;
 }
 
 .design-thumbnail-container {
@@ -29,6 +34,7 @@ input:focus {
 .design-name {
   text-align: center;
   margin: 0 auto;
+  color: grey;
 }
 
 form {
@@ -38,6 +44,7 @@ form {
 }
 
 input {
+  cursor: pointer;
   height: 50px;
   width: 50px;
   padding: 15px;
@@ -55,12 +62,20 @@ input:hover {
   background-color: grey;
 }
 
+input:focus {
+  outline: 0;
+}
+
 .rating-description {
   width: 350px;
   margin: 0 auto;
   padding-bottom: 50px;
   border-bottom: solid #BBB 1px;
   color: grey;
+}
+
+.like, .dislike {
+  color: #BBB;
 }
 
 .like {
@@ -88,12 +103,12 @@ input:hover {
 .artist-info-text-container {
   display: inline-block;
   text-align: left;
-  margin: 5px 0 0 10px;
+  margin: 5px 0 0 15px;
 }
 
 .artist-name {
   font-size: 20px;
-  color: #404040;
+  color: #5B5B5B;
 }
 
 .artist-location {
