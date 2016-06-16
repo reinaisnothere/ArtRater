@@ -15,19 +15,20 @@ input:focus {
   outline: 0;
 }
 
-.header {
-  text-align: center;
+.design-thumbnail-container {
+  height: 450px;
 }
 
 .design-thumbnail {
   display: block;
   margin: 0 auto;
-  max-height: 600px;
+  max-height: 450px;
   max-width: 400px;
 }
 
 .design-name {
   text-align: center;
+  margin: 0 auto;
 }
 
 form {

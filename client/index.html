@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="/styles/app.css">
   </head>
   <body>
-    <div class="header">
-      <h3>YOU VOTE. WE'LL SELL THE WINNERS!</h3>
-      <h2>Drawing and Sketching Art Challenge</h2>
-    </div>
+    <h3>YOU VOTE. WE'LL SELL THE WINNERS!</h3>
+    <h2>Drawing and Sketching Art Challenge</h2>
     <div ng-app="app" ng-controller="AppController" ng-cloak>
       <div ng-model="submission" ng-show="more">
-        <img ng-src="{{submission.design_thumbnail}}" class="design-thumbnail">
+        <div class="design-thumbnail-container">
+          <img ng-src="{{submission.design_thumbnail}}" class="design-thumbnail">
+        </div>
         <h3 class="design-name">{{submission.design_name}}</h3>
         <form>
           <input type="submit" value="1" ng-click="next(1)">
